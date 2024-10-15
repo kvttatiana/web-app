@@ -13,9 +13,9 @@ import (
 //роут /update с методом пут, для обновления передаём айди и новые данные. По айди ищем эл массива и обновляем данные
 
 type User struct {
-	Name    string
-	Surname string
-	ID      uint
+	Name    string `json:"name"`
+	Surname string `json:"surname"`
+	ID      uint   `json:"id"`
 }
 
 var counter = 1
